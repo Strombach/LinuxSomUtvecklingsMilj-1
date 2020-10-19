@@ -1,0 +1,12 @@
+För att kompilera programmen i 3A och 3B använde jag mig utav:
+gcc my_add_x.c -o plus_x
+
+För att kompilera och länka i 3C så använde jag kommandot:
+gcc main.c my_add.c -o main_my_add
+
+
+Svar på D:
+/usr/local/bin/ la jag den exekverbara filen. Enligt FHS är det här binära filer som inte
+hanteras av distributionen ska läggas. Lägger man den exekverbara filen utanför /usr/local
+(alltså i /usr) så finns den en risk att den kan komma att bli överskriven vid t.ex. en uppdatering.
+Den är alltså säker från att bli överskriven av systemet, om den läggs i /usr/local.
